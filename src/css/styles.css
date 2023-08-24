@@ -1,0 +1,54 @@
+.App {
+  font-family: sans-serif;
+  color: #444;
+  /* text-align: center; */
+}
+
+input {
+  border-radius: 8px;
+  border: solid 1px #ddd;
+  padding: 6px 16px;
+  outline: none;
+}
+
+button {
+  border-radius: 8px;
+  background-color: #bdd;
+  border: 0;
+  padding: 6px 16px;
+}
+
+button:hover {
+  background-color: #ff7fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.rdt_Table {
+  margin-bottom: 1rem;
+}
+.rdt_TableRow {
+  background-color: #ffe;
+}
+.rdt_TableCol {
+  font-weight: bolder;
+}
+.rdt_TableCol_Sortable {
+}
+.rdt_TableCell {
+}
+.rdt_TableHeader {
+  background-color: transparent;
+}
+.rdt_TableFooter {
+}
+.rdt_TableHead {
+}
+.rdt_TableHeadRow {
+  background-color: #c6ffe2;
+  text-align: center;
+}
+.rdt_TableBody {
+}
+.rdt_ExpanderRow {
+}
