@@ -1,19 +1,19 @@
 version: 0.2
-
 phases:
-  install:
-    runtime-versions:
-      nodejs: 12
-    commands:
-      - npm install -g
-      - npm install --save-dev @angular-devkit/build-angular
-      - npm install -g @angular/cli
-  build:
-    commands:
-      - ng build
-      - aws s3 sync dist s3://src-2021/application
+    install:
+        commands:
+            - npm install @appbaseio/reactivesearch
+    pre_build:
+        commands:
+            - npm ci
+    build:
+        commands:
+            - npm run build
 artifacts:
-  files:
-    - '**/*'
-  base-directory: 'dist*'
-  
+    base-directory: build
+    files:
+        - '**/*'
+cache:
+    paths:
+        - node_modules/**/*
+        
